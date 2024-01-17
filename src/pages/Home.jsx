@@ -4,7 +4,7 @@ import { useHttp } from 'hooks/useHttp';
 import { StyledTitle } from 'styles/Title.styled';
 
 const Home = () => {
-  const { data: movies, error } = useHttp(getTrendMovies);
+  const { data: movies } = useHttp(getTrendMovies);
   if (!movies) return;
 
   return (
