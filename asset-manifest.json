@@ -1,13 +1,21 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.0ae9af7b.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.acda10cd.js",
+    "static/js/493.0f901ef7.chunk.js": "/goit-react-hw-05-movies/static/js/493.0f901ef7.chunk.js",
+    "static/js/766.1f58ee64.chunk.js": "/goit-react-hw-05-movies/static/js/766.1f58ee64.chunk.js",
+    "static/js/779.0134ce93.chunk.js": "/goit-react-hw-05-movies/static/js/779.0134ce93.chunk.js",
+    "static/media/poster.jpeg": "/goit-react-hw-05-movies/static/media/poster.74c84eff3584e077098d.jpeg",
+    "static/media/oscar-award.jpg": "/goit-react-hw-05-movies/static/media/oscar-award.bc80953a77f5f09da1e5.jpg",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.0ae9af7b.js.map": "/goit-react-hw-05-movies/static/js/main.0ae9af7b.js.map"
+    "main.acda10cd.js.map": "/goit-react-hw-05-movies/static/js/main.acda10cd.js.map",
+    "493.0f901ef7.chunk.js.map": "/goit-react-hw-05-movies/static/js/493.0f901ef7.chunk.js.map",
+    "766.1f58ee64.chunk.js.map": "/goit-react-hw-05-movies/static/js/766.1f58ee64.chunk.js.map",
+    "779.0134ce93.chunk.js.map": "/goit-react-hw-05-movies/static/js/779.0134ce93.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.0ae9af7b.js"
+    "static/js/main.acda10cd.js"
   ]
 }
