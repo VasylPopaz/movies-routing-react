@@ -19,7 +19,7 @@ export const getMovieByQuery = async query => {
     `search/movie?query=${query}&include_adult=false`
   );
   const { data } = response;
-  return data;
+  return data.results;
 };
 
 export const getMovieDetailsById = async id => {

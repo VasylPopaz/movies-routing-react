@@ -3,14 +3,16 @@ import styled from 'styled-components';
 export const StyledContainer = styled.div`
   padding: 20px 0;
   display: flex;
-  align-items: center;
   gap: 20px;
   border-bottom: 1px solid lightgray;
 `;
 export const InfoWrapper = styled.div`
+  padding: 0 10px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border: 1px solid lightgray;
 `;
 export const AdditionalInfowrapper = styled.div`
   padding: 10px 0;

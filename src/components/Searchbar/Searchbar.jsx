@@ -4,10 +4,6 @@ import { SearchButton, SearchForm, SearchInput } from './Searchbar.styled';
 const Searchbar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
-  const handleChange = event => {
-    setQuery(event.target.value);
-  };
-
   const handleSubmit = event => {
     event.preventDefault();
     onSearch(query);
@@ -16,14 +12,12 @@ const Searchbar = ({ onSearch }) => {
 
   return (
     <SearchForm onSubmit={handleSubmit}>
-      <label>
-        <SearchInput
-          type="text"
-          value={query}
-          onChange={handleChange}
-          required
-        />
-      </label>
+      <SearchInput
+        type="text"
+        value={query}
+        onChange={event => setQuery(event.target.value)}
+        required
+      />
       <SearchButton type="submit">Search</SearchButton>
     </SearchForm>
   );

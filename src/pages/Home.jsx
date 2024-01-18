@@ -1,15 +1,23 @@
 import { MoviesList } from 'components/MoviesList/MoviesList';
 import { getTrendMovies } from 'helpers/api';
 import { useHttp } from 'hooks/useHttp';
-import { StyledTitle } from 'styles/Title.styled';
+import { StyledTitle } from 'components/Title/Title.styled';
+import Loader from 'components/Loader/Loader';
 
 const Home = () => {
-  const { data: movies } = useHttp(getTrendMovies);
-  if (!movies) return;
+  const { data: movies, error, isLoading } = useHttp(getTrendMovies);
+  if (!movies)
+    return (
+      <>
+        {isLoading && <Loader />}
+        {error && <StyledTitle>{error}</StyledTitle>}
+      </>
+    );
 
   return (
     <>
       <StyledTitle>Trending today</StyledTitle>
+      {isLoading ? <Loader /> : null}
       <MoviesList movies={movies} />
     </>
   );

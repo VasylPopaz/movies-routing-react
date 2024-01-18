@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { StyledList } from './MoviesList.styled';
-import { StyledLink } from 'styles/Link.styled';
+import { StyledLink } from 'components/Link/Link.styled';
 import { useLocation } from 'react-router-dom';
 
 export const MoviesList = ({ movies }) => {

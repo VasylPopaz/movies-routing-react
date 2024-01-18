@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledTitle } from 'styles/Title.styled';
+import { StyledTitle } from 'components/Title/Title.styled';
 import {
   AdditionalInfoList,
   AdditionalInfoTitle,
@@ -7,7 +7,8 @@ import {
   InfoWrapper,
   StyledContainer,
 } from './MovieInfo.styled';
-import { StyledLink } from 'styles/Link.styled';
+import defaultPosterImg from 'images/poster.jpeg';
+import { StyledLink } from 'components/Link/Link.styled';
 
 const MovieInfo = ({ selectedMovie }) => {
   if (!Object.keys(selectedMovie).length) return;
@@ -24,7 +25,15 @@ const MovieInfo = ({ selectedMovie }) => {
   return (
     <>
       <StyledContainer>
-        <img src={`http://image.tmdb.org/t/p/w342${poster_path}`} alt="" />
+        <img
+          src={
+            poster_path
+              ? `https://image.tmdb.org/t/p/w342${poster_path}`
+              : defaultPosterImg
+          }
+          alt={title || name}
+          width={342}
+        />
 
         <InfoWrapper>
           <StyledTitle>
@@ -32,7 +41,7 @@ const MovieInfo = ({ selectedMovie }) => {
           </StyledTitle>
           <p>User Score: {Math.ceil(vote_average * 10)}%</p>
           <h3>Overview</h3>
-          <p>{overview}</p>
+          <p>{overview || '-------------------'}</p>
           <h3>Genres</h3>
           <p>{genres.map(genre => `${genre.name} `)}</p>
         </InfoWrapper>
