@@ -3,11 +3,12 @@ import styled from 'styled-components';
 export const StyledContainer = styled.div`
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   border-bottom: 1px solid lightgray;
 `;
 export const InfoWrapper = styled.div`
-  padding: 0 10px;
+  padding: 10px;
   max-width: 500px;
   display: flex;
   flex-direction: column;

@@ -8,11 +8,11 @@ export const SearchForm = styled.form`
 `;
 export const SearchInput = styled.input`
   padding: 4px;
-  width: 20vw;
+  width: 220px;
   font-size: 16px;
 `;
 export const SearchButton = styled.button`
-  width: 10vw;
+  width: 100px;
   padding: 8px;
   border-radius: 10px;
   background-color: #0e449c;
