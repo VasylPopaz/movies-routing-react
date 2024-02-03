@@ -1,6 +1,6 @@
-import { Backdrop } from 'components/Backdrop/Backdrop.styled';
-import React from 'react';
 import { InfinitySpin } from 'react-loader-spinner';
+//
+import { Backdrop } from 'components/Backdrop/Backdrop.styled';
 
 const Loader = () => {
   return (

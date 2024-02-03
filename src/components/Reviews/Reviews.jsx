@@ -1,8 +1,10 @@
-import { getMovieReviewsById } from 'helpers/api';
 import { useParams } from 'react-router-dom';
+//
+import Loader from 'components/Loader/Loader';
+//
+import { getMovieReviewsById } from 'helpers/api';
 import { useHttp } from 'hooks/useHttp';
 import { ReviewList, ReviewTitle } from './Reviews.styled';
-import Loader from 'components/Loader/Loader';
 
 const Reviews = () => {
   const { id } = useParams();

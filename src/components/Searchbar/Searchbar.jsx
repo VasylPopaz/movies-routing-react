@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SearchButton, SearchForm, SearchInput } from './Searchbar.styled';
 
 const Searchbar = ({ onSearch }) => {

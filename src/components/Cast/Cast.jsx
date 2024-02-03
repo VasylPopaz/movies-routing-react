@@ -1,5 +1,7 @@
-import { getMovieCastById } from 'helpers/api';
 import { useParams } from 'react-router-dom';
+//
+import Loader from 'components/Loader/Loader';
+import { getMovieCastById } from 'helpers/api';
 import { useHttp } from 'hooks/useHttp';
 import {
   CastImg,
@@ -10,7 +12,6 @@ import {
   TextContainer,
 } from './Cast.styled';
 import defaultCastImg from 'images/oscar-award.jpg';
-import Loader from 'components/Loader/Loader';
 
 const Cast = () => {
   const { id } = useParams();
@@ -25,26 +26,24 @@ const Cast = () => {
     );
 
   return (
-    <>
-      <CastList>
-        {actors.map(({ id, profile_path, name, character }) => (
-          <CastListItem key={id}>
-            <CastImg
-              src={`${
-                profile_path
-                  ? `  https://image.tmdb.org/t/p/w342${profile_path}`
-                  : defaultCastImg
-              }`}
-              alt={name}
-            />
-            <TextContainer>
-              <CastTitle>{name}</CastTitle>
-              <CastText>Character: {character}</CastText>
-            </TextContainer>
-          </CastListItem>
-        ))}
-      </CastList>
-    </>
+    <CastList>
+      {actors.map(({ id, profile_path, name, character }) => (
+        <CastListItem key={id}>
+          <CastImg
+            src={`${
+              profile_path
+                ? `  https://image.tmdb.org/t/p/w342${profile_path}`
+                : defaultCastImg
+            }`}
+            alt={name}
+          />
+          <TextContainer>
+            <CastTitle>{name}</CastTitle>
+            <CastText>Character: {character}</CastText>
+          </TextContainer>
+        </CastListItem>
+      ))}
+    </CastList>
   );
 };
 export default Cast;

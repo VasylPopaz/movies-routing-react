@@ -1,9 +1,11 @@
-import { MoviesList } from 'components/MoviesList/MoviesList';
-import Searchbar from 'components/Searchbar/Searchbar';
-import { StyledTitle } from 'components/Title/Title.styled';
-import { getMovieByQuery } from 'helpers/api';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+//
+import { MoviesList } from 'components/MoviesList/MoviesList';
+import Searchbar from 'components/Searchbar/Searchbar';
+import { getMovieByQuery } from 'helpers/api';
+//
+import { StyledTitle } from 'components/Title/Title.styled';
 
 const Movies = () => {
   const [movies, setMovies] = useState(null);
@@ -33,11 +35,11 @@ const Movies = () => {
   };
 
   return (
-    <>
+    <div>
       <Searchbar onSearch={handleSubmit} />
       {error && <StyledTitle>{error}</StyledTitle>}
       <MoviesList movies={movies} />
-    </>
+    </div>
   );
 };
 

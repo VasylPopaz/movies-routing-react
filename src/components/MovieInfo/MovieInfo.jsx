@@ -1,5 +1,3 @@
-import React from 'react';
-import { StyledTitle } from 'components/Title/Title.styled';
 import {
   AdditionalInfoList,
   AdditionalInfoTitle,
@@ -7,8 +5,9 @@ import {
   InfoWrapper,
   StyledContainer,
 } from './MovieInfo.styled';
-import defaultPosterImg from 'images/poster.jpeg';
+import { StyledTitle } from 'components/Title/Title.styled';
 import { StyledLink } from 'components/Link/Link.styled';
+import defaultPosterImg from 'images/poster.jpeg';
 
 const MovieInfo = ({ selectedMovie }) => {
   if (!Object.keys(selectedMovie).length) return;

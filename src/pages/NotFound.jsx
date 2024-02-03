@@ -1,6 +1,5 @@
 import { StyledLink } from 'components/Link/Link.styled';
 import { StyledTitle } from 'components/Title/Title.styled';
-import React from 'react';
 
 const NotFound = () => {
   return (

@@ -1,11 +1,13 @@
+import { Suspense, useRef } from 'react';
+import { Outlet, useLocation, useParams } from 'react-router-dom';
+//
 import { BackLink } from 'components/BackLink/BackLink';
 import Loader from 'components/Loader/Loader';
 import MovieInfo from 'components/MovieInfo/MovieInfo';
-import { StyledTitle } from 'components/Title/Title.styled';
+//
 import { getMovieDetailsById } from 'helpers/api';
 import { useHttp } from 'hooks/useHttp';
-import { Suspense, useRef } from 'react';
-import { Outlet, useLocation, useParams } from 'react-router-dom';
+import { StyledTitle } from 'components/Title/Title.styled';
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -27,13 +29,13 @@ const MovieDetails = () => {
     );
 
   return (
-    <>
+    <div>
       <BackLink to={backLinkHref.current}></BackLink>
       <MovieInfo selectedMovie={selectedMovie} />
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
-    </>
+    </div>
   );
 };
 export default MovieDetails;
