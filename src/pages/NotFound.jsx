@@ -1,5 +1,4 @@
-import { StyledLink } from 'components/Link/Link.styled';
-import { StyledTitle } from 'components/Title/Title.styled';
+import { StyledLink, StyledTitle } from 'components';
 
 const NotFound = () => {
   return (

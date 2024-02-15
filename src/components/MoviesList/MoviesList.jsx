@@ -1,20 +1,48 @@
 import { useLocation } from 'react-router-dom';
 //
-import { StyledLink } from 'components/Link/Link.styled';
-import { StyledList } from './MoviesList.styled';
+import {
+  StyledDescr,
+  StyledLinkMoviesList,
+  StyledList,
+  StyledListItem,
+} from './MoviesList.styled';
+import defaultPosterImg from 'images/poster.jpeg';
 
 export const MoviesList = ({ movies }) => {
   const location = useLocation();
 
   if (!movies) return;
+
   return (
     <StyledList>
       {movies.map(movie => (
-        <li key={movie.id}>
-          <StyledLink to={`/movies/${movie.id}`} state={{ from: location }}>
-            {movie.title || movie.name}
-          </StyledLink>
-        </li>
+        <StyledListItem key={movie.id}>
+          <StyledLinkMoviesList
+            to={`/movies/${movie.id}`}
+            state={{ from: location }}
+          >
+            <img
+              src={
+                movie.poster_path
+                  ? `https://image.tmdb.org/t/p/w185${movie.poster_path}`
+                  : defaultPosterImg
+              }
+              alt=""
+            />
+
+            <StyledDescr>
+              {movie.title
+                ? `${movie.title}  (${
+                    movie.release_date.slice(0, 4) ||
+                    movie.first_air_date?.slice(0, 4)
+                  }) `
+                : ` ${movie.name}  (${
+                    movie.release_date?.slice(0, 4) ||
+                    movie.first_air_date?.slice(0, 4)
+                  })`}
+            </StyledDescr>
+          </StyledLinkMoviesList>
+        </StyledListItem>
       ))}
     </StyledList>
   );

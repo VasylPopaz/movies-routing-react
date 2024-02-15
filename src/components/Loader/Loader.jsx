@@ -1,8 +1,8 @@
 import { InfinitySpin } from 'react-loader-spinner';
 //
-import { Backdrop } from 'components/Backdrop/Backdrop.styled';
+import { Backdrop } from 'components';
 
-const Loader = () => {
+export const Loader = () => {
   return (
     <Backdrop>
       <InfinitySpin
@@ -14,5 +14,3 @@ const Loader = () => {
     </Backdrop>
   );
 };
-
-export default Loader;

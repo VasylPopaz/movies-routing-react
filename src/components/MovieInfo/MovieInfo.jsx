@@ -5,8 +5,8 @@ import {
   InfoWrapper,
   StyledContainer,
 } from './MovieInfo.styled';
-import { StyledTitle } from 'components/Title/Title.styled';
-import { StyledLink } from 'components/Link/Link.styled';
+import { StyledTitle, StyledLink } from 'components';
+
 import defaultPosterImg from 'images/poster.jpeg';
 
 const MovieInfo = ({ selectedMovie }) => {

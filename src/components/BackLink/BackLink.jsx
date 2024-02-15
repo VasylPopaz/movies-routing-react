@@ -1,4 +1,4 @@
-import { StyledLink } from 'components/Link/Link.styled';
+import { StyledLink } from 'components';
 
 export const BackLink = ({ to }) => {
   return <StyledLink to={to}>Go back</StyledLink>;

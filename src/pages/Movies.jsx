@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 //
-import { MoviesList } from 'components/MoviesList/MoviesList';
-import Searchbar from 'components/Searchbar/Searchbar';
+import { MoviesList, Searchbar } from 'components';
 import { getMovieByQuery } from 'helpers/api';
 //
 import { StyledTitle } from 'components/Title/Title.styled';

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 //
-import Loader from 'components/Loader/Loader';
+import { Loader } from 'components';
 //
 import { getMovieReviewsById } from 'helpers/api';
 import { useHttp } from 'hooks/useHttp';

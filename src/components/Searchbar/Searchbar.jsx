@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { SearchButton, SearchForm, SearchInput } from './Searchbar.styled';
 
-const Searchbar = ({ onSearch }) => {
+export const Searchbar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
   const handleSubmit = event => {
@@ -23,4 +23,4 @@ const Searchbar = ({ onSearch }) => {
   );
 };
 
-export default Searchbar;
+
