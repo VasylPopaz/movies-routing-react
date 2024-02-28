@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/movies-routing-react/static/css/main.0a822873.css",
-    "main.js": "/movies-routing-react/static/js/main.96820852.js",
+    "main.js": "/movies-routing-react/static/js/main.bbb4a81b.js",
     "static/js/549.01e6eaa2.chunk.js": "/movies-routing-react/static/js/549.01e6eaa2.chunk.js",
     "static/js/766.b02299ef.chunk.js": "/movies-routing-react/static/js/766.b02299ef.chunk.js",
     "static/js/779.0fb4bff5.chunk.js": "/movies-routing-react/static/js/779.0fb4bff5.chunk.js",
@@ -9,13 +9,13 @@
     "static/media/oscar-award.jpg": "/movies-routing-react/static/media/oscar-award.bc80953a77f5f09da1e5.jpg",
     "index.html": "/movies-routing-react/index.html",
     "main.0a822873.css.map": "/movies-routing-react/static/css/main.0a822873.css.map",
-    "main.96820852.js.map": "/movies-routing-react/static/js/main.96820852.js.map",
+    "main.bbb4a81b.js.map": "/movies-routing-react/static/js/main.bbb4a81b.js.map",
     "549.01e6eaa2.chunk.js.map": "/movies-routing-react/static/js/549.01e6eaa2.chunk.js.map",
     "766.b02299ef.chunk.js.map": "/movies-routing-react/static/js/766.b02299ef.chunk.js.map",
     "779.0fb4bff5.chunk.js.map": "/movies-routing-react/static/js/779.0fb4bff5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a822873.css",
-    "static/js/main.96820852.js"
+    "static/js/main.bbb4a81b.js"
   ]
 }
